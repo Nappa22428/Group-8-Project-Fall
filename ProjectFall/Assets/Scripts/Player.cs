@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Sprite[] sprites;
     public Sprite[] hellSprites;
     private int spriteIndex;
+    private new Rigidbody2D rigidbody2D;
 
     GameManager gameManager;
     public GameObject gm;
@@ -21,7 +22,8 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        gameManager = gm.GetComponent<GameManager>(); 
+        gameManager = gm.GetComponent<GameManager>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
     private void Start()
     {
@@ -36,8 +38,26 @@ public class Player : MonoBehaviour
         direction = Vector3.zero;
     }
 
+    // Function to switch gravity
+    private void GravitySwitch()
+    {
+        if (transform.position.y < -0.5)
+        {
+            //rigidbody2D.gravityScale = -1;
+            gravity = 9.81f;
+        } else if (transform.position.y > 0.5)
+        {
+            //rigidbody2D.gravityScale = 1;
+            gravity = -9.81f;
+        } else {
+            //rigidbody2D.gravityScale = 0;
+            gravity = 0f;
+        }
+    }
+
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             direction = Vector3.up * strength;
@@ -52,7 +72,18 @@ public class Player : MonoBehaviour
                 direction = Vector3.up * strength;
             }
         }
+        */
 
+        // Dual direction controls
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            direction = Vector3.up * strength;
+        } else if (Input.GetKeyDown(KeyCode.S))
+        {
+            direction = Vector3.down * strength;
+        }
+        
+        GravitySwitch();
         direction.y += gravity * Time.deltaTime;
         transform.position += direction * Time.deltaTime;
     }
