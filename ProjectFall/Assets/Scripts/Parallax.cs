@@ -27,7 +27,7 @@ public class Parallax : MonoBehaviour
     {
         meshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
 
-        if(gameManager.score % 6 == 0 && gameManager.score != 0)
+       /* if(gameManager.score % 6 == 0 && gameManager.score != 0)
         {
             if(gameManager.hell == true && goodRepeat == false)
             {
@@ -42,7 +42,7 @@ public class Parallax : MonoBehaviour
                 hellRepeat = true;
             }
         }
-        
+        */
        
     }
 }

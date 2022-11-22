@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private Spawner spawner;
 
     public AudioSource song1;
-    public AudioSource song2;
+    //public AudioSource song2;
 
     public Text scoreText;
     public GameObject playButton;
@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         song1.Play();
-        song2.Play();
-        song2.Pause();
+       // song2.Play();
+       // song2.Pause();
 
     }
     private void Awake()
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
         player = FindObjectOfType<Player>();
         spawner = FindObjectOfType<Spawner>();
-        song2.Pause();
+       // song2.Pause();
         Pause();
     }
 
@@ -77,15 +77,15 @@ public class GameManager : MonoBehaviour
         if(score%6 == 0 && hell == false)
         {
             hell = true;
-            song1.Pause();
+            //song1.Pause();
 
-            song2.UnPause();
+           // song2.UnPause();
         }
         else if(score % 6 == 0 && hell == true)
         {
             hell = false;
-            song1.UnPause();
-            song2.Pause();
+           // song1.UnPause();
+           // song2.Pause();
         }
     }
 }
