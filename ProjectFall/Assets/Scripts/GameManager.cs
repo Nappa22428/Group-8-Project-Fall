@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     public void Play()
     {
         score = 0;
+        player.Hp = 3;
         scoreText.text = score.ToString();
 
         playButton.SetActive(false);
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(pipes[i].gameObject);
         }
+        spawner.s = true;
     }
 
     public void GameOver()
