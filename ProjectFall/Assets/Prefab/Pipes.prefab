@@ -171,8 +171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf0080bb90ebe4483b757c03a3b192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  top: {fileID: 264803146826880625}
-  bottom: {fileID: 4010137848679038819}
   speed: 5
 --- !u!1 &6237775256074237153
 GameObject:
@@ -184,9 +182,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7321363983966047193}
   - component: {fileID: 450446060377262275}
+  - component: {fileID: 3338016253138119912}
   m_Layer: 0
   m_Name: Scoring
-  m_TagString: Scoring
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +217,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.18971586}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -229,8 +228,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 3}
+  m_Size: {x: 0.25, y: 18.148132}
   m_EdgeRadius: 0
+--- !u!114 &3338016253138119912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237775256074237153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c982c72aa6b170d42b07bcd61c779184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySpawn: {fileID: 1844624824104977170, guid: 3c9b6fbee518c7341aa5a97bc2180b98, type: 3}
 --- !u!1 &8797923270779325381
 GameObject:
   m_ObjectHideFlags: 0
