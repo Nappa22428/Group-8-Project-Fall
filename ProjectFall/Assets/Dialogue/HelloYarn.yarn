@@ -1,0 +1,39 @@
+﻿title: Start
+tags:
+---
+<<declare $timesTalked = 0>>
+
+<<if $timesTalked == 0>>
+<<set $timesTalked to $timesTalked + 1>>
+
+Narrator: Hello world!
+Narrator: This is a lovely line of dialogue.
+Narrator: Wouldn't you agree?
+
+-> Yes, I love dialogue!
+    Narrator: That's what I'm talking about!
+-> No, I prefer pictures.
+    Narrator: Dang, I tried my best...
+    <<jump Pictures>>
+
+<<elseif $timesTalked == 1>>
+<<set $timesTalked to $timesTalked + 1>>
+Narrator: Why are you still talking?
+Narrator: We've already done this bit.
+<<else>>
+Narrator: You've already talked to me {$timesTalked} times.
+Narrator: Please stop... I'm begging you.
+<<set $timesTalked to $timesTalked + 1>>
+<<endif>>
+===
+
+title: Pictures
+position: 0,100
+---
+Narrator: Perhaps in the future there will be a picture workshop!
+Narrator: How does that sound?
+-> That sounds great
+    Narrator: Awesome!
+-> No, I hate learning.
+    Narrator: I'm done here.
+===
