@@ -179,7 +179,7 @@
       }
     },
     "dev.yarnspinner.unity": {
-      "version": "file:C:/Users/danjh/Downloads/YarnSpinner-Unity-main/YarnSpinner-Unity-main",
+      "version": "file:C:/Users/danjh/Documents/Unity Projects/Group-8-Project-Fall/YarnSpinner-Unity-main/YarnSpinner-Unity-main",
       "depth": 0,
       "source": "local",
       "dependencies": {
