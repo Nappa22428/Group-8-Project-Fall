@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638057032846316897
-    m_Hash: 470307827
+      ticks: 638057042802143460
+    m_Hash: 122119286
   m_LockFileStatus:
     m_FilePath: C:/Users/danjh/Documents/Unity Projects/Group-8-Project-Fall/ProjectFall/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638057032846356970
-    m_Hash: 2340736509
+      ticks: 638057042802213455
+    m_Hash: 3411807072
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -1656,12 +1656,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: dev.yarnspinner.unity@file:C:\Users\danjh\Documents\Unity Projects\Group-8-Project-Fall\YarnSpinner-Unity-main\YarnSpinner-Unity-main
+    - packageId: dev.yarnspinner.unity@2.2.3
       testable: 0
       isDirectDependency: 1
       version: 2.2.3
-      source: 4
-      resolvedPath: C:\Users\danjh\Documents\Unity Projects\Group-8-Project-Fall\YarnSpinner-Unity-main\YarnSpinner-Unity-main
+      source: 1
+      resolvedPath: C:\Users\danjh\Documents\Unity Projects\Group-8-Project-Fall\ProjectFall\Library\PackageCache\dev.yarnspinner.unity@2.2.3
       assetPath: Packages/dev.yarnspinner.unity
       name: dev.yarnspinner.unity
       displayName: Yarn Spinner
@@ -1678,8 +1678,36 @@ m_PackageAssets:
       status: 4
       errors: []
       versions:
-        all: []
-        compatible: []
+        all:
+        - 1.2.2
+        - 1.2.4
+        - 1.2.5
+        - 1.2.6
+        - 1.2.7
+        - 2.0.0-preview
+        - 2.0.0
+        - 2.0.1
+        - 2.0.2
+        - 2.1.0
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 2.2.3
+        compatible:
+        - 1.2.2
+        - 1.2.4
+        - 1.2.5
+        - 1.2.6
+        - 1.2.7
+        - 2.0.0-preview
+        - 2.0.0
+        - 2.0.1
+        - 2.0.2
+        - 2.1.0
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 2.2.3
         verified: 
       dependencies:
       - name: com.unity.textmeshpro
@@ -1697,18 +1725,19 @@ m_PackageAssets:
       - Dialogue
       - Yarn
       registry:
-        id: 
-        name: 
-        url: 
-        scopes: []
+        id: scoped:OpenUPM
+        name: OpenUPM
+        url: https://package.openupm.com
+        scopes:
+        - dev.yarnspinner
         isDefault: 0
         capabilities: 0
-      hasRegistry: 0
+      hasRegistry: 1
       hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 638039998466640000
       documentationUrl: https://docs.yarnspinner.dev/
       hasRepository: 0
       repository:
@@ -3953,20 +3982,6 @@ m_PackageAssets:
         revision: 6f9c488e4d487ead34ee4d516f0a2f4a911a8b25
         path: 
   m_LocalPackages:
-    m_LocalFileStatus:
-    - m_FilePath: C:\Users\danjh\Documents\Unity Projects\Group-8-Project-Fall\YarnSpinner-Unity-main\YarnSpinner-Unity-main/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 638056934574168835
-      m_Hash: 3540061430
-    - m_FilePath: C:\Users\danjh\Documents\Unity Projects\Group-8-Project-Fall\YarnSpinner-Unity-main\YarnSpinner-Unity-main
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 0
-      m_Hash: 0
+    m_LocalFileStatus: []
 m_ProjectPath: C:/Users/danjh/Documents/Unity Projects/Group-8-Project-Fall/ProjectFall/Packages
 m_EditorVersion: 2020.3.21f1 (a38c86f6690f)
