@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638041503404008764
-    m_Hash: 3318500175
+      ticks: 638057015095980163
+    m_Hash: 733141273
   m_LockFileStatus:
     m_FilePath: C:/Users/nappa/Documents/GitHub/bruh2/Group-8-Project-Fall/ProjectFall/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638041503404118876
-    m_Hash: 3996183261
+      ticks: 638057015096000186
+    m_Hash: 1593303141
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
