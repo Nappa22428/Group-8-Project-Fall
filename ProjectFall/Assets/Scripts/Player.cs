@@ -10,12 +10,8 @@ public class Player : MonoBehaviour
     private int spriteIndex;
     private new Rigidbody2D rigidbody2D;
 
-    public int Hp = 3;
     GameManager gameManager;
-    Spawner mySpawner;
-    public GameObject spwn;
     public GameObject gm;
-    
 
     private Vector3 direction;
 
@@ -27,7 +23,6 @@ public class Player : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameManager = gm.GetComponent<GameManager>();
-        mySpawner = spwn.GetComponent<Spawner>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
     private void Start()
@@ -95,7 +90,7 @@ public class Player : MonoBehaviour
 
     private void AnimateSprite()
     {
-        /*spriteIndex++;
+        spriteIndex++;
 
         if (spriteIndex >= sprites.Length)
         {
@@ -114,32 +109,17 @@ public class Player : MonoBehaviour
             }
            
         }
-        */
-         spriteRenderer.sprite = sprites[Hp-1];
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            Hp--;
-            if (Hp <= 0)
-            {
-                FindObjectOfType<GameManager>().GameOver();
-            }
-            Destroy(other.gameObject);
-            
-            
+            FindObjectOfType<GameManager>().GameOver();
         }
         else if (other.gameObject.CompareTag("Scoring"))
         {
             FindObjectOfType<GameManager>().IncreaseScore();
-        }
-        else if (other.gameObject.CompareTag("Spawn"))
-        {
-            FindObjectOfType<Spawner>().sTrue();
-            Debug.Log("bruh");
         }
     }
 

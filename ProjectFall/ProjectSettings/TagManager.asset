@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Obstacle
-  - Scoring
-  - Spawn
-  - Destroy
+  tags: []
   layers:
   - Default
   - TransparentFX
