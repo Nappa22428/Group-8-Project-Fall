@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pipes : MonoBehaviour
 {
-    public Transform top;
-    public Transform bottom;
+    //public Transform top;
+    //public Transform bottom;
 
     public float speed = 5f;
     private float leftEdge;
@@ -19,9 +19,9 @@ public class Pipes : MonoBehaviour
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
 
-        if (transform.position.x < leftEdge)
-        {
-            Destroy(gameObject);
-        }
+       // if (transform.position.x < leftEdge)
+       // {
+       //     Destroy(gameObject);
+       // }
     }
 }
