@@ -1,0 +1,21 @@
+﻿title: Narrative3
+tags:
+---
+The Beast: You persist.
+The Beast: Why do this to us? To me?
+The Beast: This isn’t working.
+The Beast: You’ll never find what you’re looking for.
+The Beast: This “adventure” is just an excuse.
+The Beast: You’re running from yourself.
+
+-> Yes
+    The Beast: You mock me.
+    The Beast: I know you have no intention of coming back.
+-> No
+    The Beast: I knew it. 
+    The Beast: You’d never stoop so low as to admit you’re wrong.
+
+The Beast: Go.
+The Beast: Run from responsibility for the rest of time.
+The Beast: Have fun.
+===

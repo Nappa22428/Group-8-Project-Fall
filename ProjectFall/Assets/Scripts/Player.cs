@@ -132,14 +132,15 @@ public class Player : MonoBehaviour
             
             
         }
-        else if (other.gameObject.CompareTag("Scoring"))
+        /*else if (other.gameObject.CompareTag("Scoring"))
         {
             FindObjectOfType<GameManager>().IncreaseScore();
-        }
+        }*/
         else if (other.gameObject.CompareTag("Spawn"))
         {
             FindObjectOfType<Spawner>().sTrue();
             Debug.Log("bruh");
+            FindObjectOfType<GameManager>().IncreaseScore();
         }
     }
 

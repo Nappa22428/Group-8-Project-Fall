@@ -1,0 +1,14 @@
+﻿title: Narrative2
+tags:
+---
+The Beast: You continue.
+The Beast: You continue to defy us. To abandon your home. Your family.
+The Beast: You know you can’t do this, right?
+
+-> Yes
+    The Beast: Then why do you continue? Do you want to hurt us?
+-> No
+    The Beast: You’re misguided. You will not find what you seek.
+
+The Beast: Return to us. Return to the comfort of home, of family.
+===
