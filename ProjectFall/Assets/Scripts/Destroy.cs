@@ -17,7 +17,7 @@ public class Destroy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("Spawn"))
+        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("Spawn") || other.gameObject.CompareTag("O2"))
         {
             Destroy(other.gameObject);
             Debug.Log("bruhhhh");

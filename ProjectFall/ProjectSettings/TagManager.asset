@@ -9,6 +9,7 @@ TagManager:
   - Scoring
   - Destroy
   - Death
+  - O2
   layers:
   - Default
   - TransparentFX
