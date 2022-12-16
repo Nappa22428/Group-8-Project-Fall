@@ -15,7 +15,9 @@ public class Player : MonoBehaviour
     Spawner mySpawner;
     public GameObject spwn;
     public GameObject gm;
-    
+
+    public AudioSource gameOverAudio;
+    public AudioSource painAudio;
 
     private Vector3 direction;
 
@@ -126,16 +128,21 @@ public class Player : MonoBehaviour
             Hp--;
             if (Hp <= 0)
             {
+                gameOverAudio.Play(); 
                 FindObjectOfType<GameManager>().GameOver();
+                
+
             }
+            painAudio.Play();
             Destroy(other.gameObject);
             
             
         }
-        /*else if (other.gameObject.CompareTag("Scoring"))
+        else if (other.gameObject.CompareTag("Death"))
         {
-            FindObjectOfType<GameManager>().IncreaseScore();
-        }*/
+            gameOverAudio.Play();
+            FindObjectOfType<GameManager>().GameOver();
+        }
         else if (other.gameObject.CompareTag("Spawn"))
         {
             FindObjectOfType<Spawner>().sTrue();

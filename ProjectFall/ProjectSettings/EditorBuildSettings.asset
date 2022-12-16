@@ -12,6 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/main  menu.unity
     guid: a1de820f5bcb16b489eeda33ae707560
   - enabled: 1
-    path: Assets/Scenes/FlappyBird.unity
+    path: Assets/Scenes/FlappyBird1.unity
     guid: d4a82937cd4471b4e9821086ae5abcdf
+  - enabled: 1
+    path: Assets/Scenes/Narrative1.unity
+    guid: fba002b122b21124aa68bfe699493c79
+  - enabled: 1
+    path: Assets/Scenes/FlappyBird2.unity
+    guid: 816f94cce3b27cb4dae1ab471942432a
+  - enabled: 1
+    path: Assets/Scenes/Narrative2.unity
+    guid: 8f05e6897ac67fd428592a654a86ebfa
+  - enabled: 1
+    path: Assets/Scenes/FlappyBird3.unity
+    guid: 17ec167847ec2644b82552780e064961
+  - enabled: 1
+    path: Assets/Scenes/Narrative3.unity
+    guid: 4613b2c080de90c4182923fcc053befb
+  - enabled: 1
+    path: Assets/Scenes/FlappyBirdEndless.unity
+    guid: 89b3eb68d984005489064373423fbf9a
   m_configObjects: {}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,15 +10,23 @@ public class GameManager : MonoBehaviour
     private Spawner spawner;
 
     public AudioSource song1;
+    public AudioSource pointSound;
     //public AudioSource song2;
 
+    public string nScene;
+
+   
+
     public Text scoreText;
+
     public GameObject playButton;
     public GameObject gameOver;
     public GameObject startUp;
-
+    
+    public bool endless = false;
     public bool hell = false;
     public int score { get; private set; }
+    public int scoreWin;
 
     private void Start()
     {
@@ -41,6 +50,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         player.Hp = 3;
         scoreText.text = score.ToString();
+        song1.UnPause();
 
         playButton.SetActive(false);
         gameOver.SetActive(false);
@@ -57,11 +67,19 @@ public class GameManager : MonoBehaviour
         spawner.s = true;
     }
 
+    public void Update()
+    {
+        if (score == scoreWin && endless == false)
+        {
+            SceneManager.LoadScene(nScene);
+        }
+    }
+
     public void GameOver()
     {
         playButton.SetActive(true);
         gameOver.SetActive(true);
-
+        song1.Pause();
         Pause();
     }
 
@@ -75,7 +93,9 @@ public class GameManager : MonoBehaviour
     {
         score++;
         scoreText.text = score.ToString();
+        pointSound.Play();
 
+        /*
         if(score%6 == 0 && hell == false)
         {
             hell = true;
@@ -89,5 +109,6 @@ public class GameManager : MonoBehaviour
            // song1.UnPause();
            // song2.Pause();
         }
+        */
     }
 }
