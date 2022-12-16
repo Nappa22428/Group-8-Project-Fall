@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
    public void PlayGame()
     {
-        SceneManager.LoadScene("FlappyBird");
+        SceneManager.LoadScene("FlappyBird1");
     }
     public void QuitGame()
     {
